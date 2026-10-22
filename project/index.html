@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Photostore – Photographe commercial & publicitaire à Compiègne</title>
+    <meta
+      name="description"
+      content="Photostore, photographe freelance à Compiègne spécialisé en packshots produits, photos publicitaires et mise en scène pour marques, e-commerçants et agences. Devis gratuit."
+    />
+    <meta name="keywords" content="photographe commercial, packshot, photographie publicitaire, Compiègne, Oise, produit, e-commerce" />
+    <meta name="author" content="Photostore" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Photostore – Photographe commercial & publicitaire à Compiègne" />
+    <meta property="og:description" content="Packshots produits, photos publicitaires et mises en scène pour marques, e-commerçants et agences. Basé à Compiègne, Oise." />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content="https://images.pexels.com/photos/8361491/pexels-photo-8361491.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop" />
+    <meta property="og:url" content="https://photostore.fr" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ====================== HEADER ====================== -->
+    <header class="header" id="header">
+      <div class="header__inner">
+        <!-- Logo texte + icône appareil photo SVG -->
+        <a href="#accueil" class="logo" aria-label="Photostore - accueil">
+          <svg class="logo__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+          <span class="logo__text">Photostore</span>
+        </a>
+
+        <!-- Navigation desktop -->
+        <nav class="nav" id="nav" aria-label="Navigation principale">
+          <ul class="nav__list">
+            <li><a href="#accueil" class="nav__link">Accueil</a></li>
+            <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+            <li><a href="#tarifs" class="nav__link">Tarifs</a></li>
+            <li><a href="#avis" class="nav__link">Avis</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="btn btn--primary header__cta">Demander un devis</a>
+
+        <!-- Bouton menu burger (mobile) -->
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ====================== HERO ====================== -->
+      <section class="hero" id="accueil">
+        <div class="hero__overlay"></div>
+        <img
+          src="https://images.pexels.com/photos/8361491/pexels-photo-8361491.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Flacon de parfum posé sur du sable sous une lumière dorée"
+          class="hero__img"
+          fetchpriority="high"
+        />
+        <div class="hero__content reveal">
+          <p class="hero__tagline">Photographe commercial · Compiègne</p>
+          <h1 class="hero__title">Vos produits méritent<br />la meilleure lumière</h1>
+          <p class="hero__subtitle">
+            Packshots, mises en scène et photographie publicitaire pour marques,
+            e-commerçants et agences. Sublimez vos produits avec une image qui vend.
+          </p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--primary">Voir le portfolio</a>
+            <a href="#contact" class="btn btn--ghost">Demander un devis</a>
+          </div>
+          <p class="hero__rating">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <strong>4,8/5</strong> – 20 avis clients
+          </p>
+        </div>
+      </section>
+
+      <!-- ====================== SERVICES ====================== -->
+      <section class="section services" id="services">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Mes services</p>
+          <h2 class="section__title">Un accompagnement sur-mesure</h2>
+          <p class="section__lead">
+            De la prise de vue à la retouche finale, je couvre tous vos besoins
+            en photographie commerciale et publicitaire.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <!-- Carte 1 : Packshot fond blanc -->
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="12" cy="12" r="4" />
+              </svg>
+            </div>
+            <h3>Packshot fond blanc</h3>
+            <p>Photographie de vos produits sur fond blanc pur, idéale pour e-commerce, catalogues et fiches produits.</p>
+          </article>
+
+          <!-- Carte 2 : Mise en scène / lifestyle -->
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <h3>Photo mise en scène</h3>
+            <p>Mises en scène lifestyle et publicitaires avec décors, accessoires et lumière naturelle pour raconter votre marque.</p>
+          </article>
+
+          <!-- Carte 3 : Culinaire & boissons -->
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M8 2h8l-1 11a3 3 0 0 1-6 0z" />
+                <path d="M8 2v3a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V2" />
+                <path d="M12 16v4M9 22h6" />
+              </svg>
+            </div>
+            <h3>Photo culinaire & boissons</h3>
+            <p>Photographie gastronomique pour restaurants, producteurs et marques de boissons. Vos produits appétissants à l'image.</p>
+          </article>
+
+          <!-- Carte 4 : Retouche & détourage -->
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.2l.9-5.5-4-3.9 5.5-.8z" />
+              </svg>
+            </div>
+            <h3>Retouche & détourage</h3>
+            <p>Retouche professionnelle, détourage au pixel près, correction colorimétrique et optimisation pour le web et print.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ====================== PORTFOLIO ====================== -->
+      <section class="section portfolio" id="portfolio">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Portfolio</p>
+          <h2 class="section__title">Sélection de réalisations</h2>
+          <p class="section__lead">
+            Parfums, cosmétiques, bijoux, gastronomie et objets design :
+            un aperçu de mon travail pour mes clients.
+          </p>
+        </div>
+
+        <!-- Filtres par catégorie -->
+        <div class="portfolio__filters reveal" role="tablist" aria-label="Filtrer par catégorie">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+          <button class="filter-btn" data-filter="parfums" role="tab" aria-selected="false">Parfums</button>
+          <button class="filter-btn" data-filter="cosmetiques" role="tab" aria-selected="false">Cosmétiques</button>
+          <button class="filter-btn" data-filter="bijoux" role="tab" aria-selected="false">Bijoux</button>
+          <button class="filter-btn" data-filter="gastronomie" role="tab" aria-selected="false">Gastronomie</button>
+          <button class="filter-btn" data-filter="objets" role="tab" aria-selected="false">Objets</button>
+        </div>
+
+        <!-- Grille masonry -->
+        <div class="portfolio__grid" id="portfolio-grid">
+          <!-- Parfums -->
+          <figure class="portfolio__item" data-category="parfums">
+            <img src="https://images.pexels.com/photos/8361491/pexels-photo-8361491.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flacon de parfum posé sur du sable sous une lumière dorée" loading="lazy" />
+            <figcaption>Parfum sur sable — lumière dorée</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="parfums">
+            <img src="https://images.pexels.com/photos/8361522/pexels-photo-8361522.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flacon de parfum sur sable avec ombres dramatiques" loading="lazy" />
+            <figcaption>Parfum — ombres et lumière</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="parfums">
+            <img src="https://images.pexels.com/photos/8361539/pexels-photo-8361539.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flacon de parfum élégant projetant des ombres sur le sable" loading="lazy" />
+            <figcaption>Parfum — élégance minimaliste</figcaption>
+          </figure>
+
+          <!-- Cosmétiques -->
+          <figure class="portfolio__item" data-category="cosmetiques">
+            <img src="https://images.pexels.com/photos/16233812/pexels-photo-16233812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flacons de sérum cosmétique de luxe sur fond texturé" loading="lazy" />
+            <figcaption>Cosmétique — sérum premium</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="cosmetiques">
+            <img src="https://images.pexels.com/photos/16378446/pexels-photo-16378446.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flacons de soins skincare dans un cadre minimaliste" loading="lazy" />
+            <figcaption>Skincare — minimaliste</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="cosmetiques">
+            <img src="https://images.pexels.com/photos/16372665/pexels-photo-16372665.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Arrangement de flacons cosmétiques de luxe sur fond sombre texturé" loading="lazy" />
+            <figcaption>Cosmétique — ambiance sombre</figcaption>
+          </figure>
+
+          <!-- Bijoux -->
+          <figure class="portfolio__item" data-category="bijoux">
+            <img src="https://images.pexels.com/photos/15727966/pexels-photo-15727966.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bague en or en forme de serpent posée sur un appareil photo vintage" loading="lazy" />
+            <figcaption>Bague or — série fine</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="bijoux">
+            <img src="https://images.pexels.com/photos/2732096/pexels-photo-2732096.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bague diamant de près sur fond sombre et ondulé" loading="lazy" />
+            <figcaption>Bague diamant — gros plan</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="bijoux">
+            <img src="https://images.pexels.com/photos/38909368/pexels-photo-38909368.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bagues en or élégantes sur surface réfléchissante" loading="lazy" />
+            <figcaption>Bijoux — reflets dorés</figcaption>
+          </figure>
+
+          <!-- Gastronomie -->
+          <figure class="portfolio__item" data-category="gastronomie">
+            <img src="https://images.pexels.com/photos/33997739/pexels-photo-33997739.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Plateau de pâtisseries garnies de fromage, présentation gastronomique" loading="lazy" />
+            <figcaption>Pâtisseries salées — artisan</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="gastronomie">
+            <img src="https://images.pexels.com/photos/28122516/pexels-photo-28122516.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tarte aux fruits mangue et fraise avec chantilly sur fond clair" loading="lazy" />
+            <figcaption>Tarte fruitée — pâtisserie fine</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="gastronomie">
+            <img src="https://images.pexels.com/photos/34492386/pexels-photo-34492386.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Part de crumble aux prunes saupoudré de sucre glace sur assiette dorée" loading="lazy" />
+            <figcaption>Crumble — lumière chaude</figcaption>
+          </figure>
+
+          <!-- Objets -->
+          <figure class="portfolio__item" data-category="objets">
+            <img src="https://images.pexels.com/photos/16095201/pexels-photo-16095201.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bouteille de tequila au design cactus unique en studio" loading="lazy" />
+            <figcaption>Bouteille — design studio</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="objets">
+            <img src="https://images.pexels.com/photos/33425949/pexels-photo-33425949.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cinq flacons noirs élégamment disposés sur fond brun chaud" loading="lazy" />
+            <figcaption>Flacons noirs — série produit</figcaption>
+          </figure>
+          <figure class="portfolio__item" data-category="objets">
+            <img src="https://images.pexels.com/photos/40139594/pexels-photo-40139594.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Flacons noirs avec sphères orange sur surface réfléchissante, design minimaliste" loading="lazy" />
+            <figcaption>Objets — composition minimaliste</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ====================== PROCESSUS ====================== -->
+      <section class="section process" id="processus">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Mon processus</p>
+          <h2 class="section__title">Du brief à la livraison</h2>
+          <p class="section__lead">
+            Une méthode claire en 4 étapes pour un résultat à la hauteur de vos attentes.
+          </p>
+        </div>
+
+        <div class="process__timeline">
+          <!-- Étape 1 -->
+          <div class="process__step reveal">
+            <div class="process__number">01</div>
+            <div class="process__content">
+              <h3>Brief</h3>
+              <p>On échange sur vos besoins, votre marque, vos références visuelles et vos objectifs commerciaux.</p>
+            </div>
+          </div>
+          <!-- Étape 2 -->
+          <div class="process__step reveal">
+            <div class="process__number">02</div>
+            <div class="process__content">
+              <h3>Shooting</h3>
+              <p>Prise de vue en studio ou en extérieur avec décors, lumière et accessoires adaptés à votre univers.</p>
+            </div>
+          </div>
+          <!-- Étape 3 -->
+          <div class="process__step reveal">
+            <div class="process__number">03</div>
+            <div class="process__content">
+              <h3>Retouche</h3>
+              <p>Sélection, retouche colorimétrique, détourage et optimisation pour un rendu professionnel impeccable.</p>
+            </div>
+          </div>
+          <!-- Étape 4 -->
+          <div class="process__step reveal">
+            <div class="process__number">04</div>
+            <div class="process__content">
+              <h3>Livraison</h3>
+              <p>Récupération de vos photos en haute résolution, prêtes à l'emploi pour web, print et réseaux sociaux.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================== TARIFS ====================== -->
+      <section class="section pricing" id="tarifs">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Tarifs</p>
+          <h2 class="section__title">Des formules adaptées à vos besoins</h2>
+          <p class="section__lead">
+            Des forfaits clairs et transparents pour chaque type de projet.
+          </p>
+        </div>
+
+        <div class="pricing__grid">
+          <!-- Formule Essentiel -->
+          <article class="pricing-card reveal">
+            <h3 class="pricing-card__name">Essentiel</h3>
+            <p class="pricing-card__price">150&nbsp;€</p>
+            <ul class="pricing-card__features">
+              <li>5 packshots fond blanc</li>
+              <li>Retouche basique</li>
+              <li>Livraison sous 72&nbsp;h</li>
+              <li>Fichiers haute résolution</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block">Choisir cette formule</a>
+          </article>
+
+          <!-- Formule Pro — mise en avant -->
+          <article class="pricing-card pricing-card--featured reveal">
+            <span class="pricing-card__badge">Populaire</span>
+            <h3 class="pricing-card__name">Pro</h3>
+            <p class="pricing-card__price">390&nbsp;€</p>
+            <ul class="pricing-card__features">
+              <li>15 photos dont 5 mises en scène</li>
+              <li>Retouche avancée</li>
+              <li>Droits d'usage web et réseaux sociaux</li>
+              <li>Livraison sous 5 jours</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--block">Choisir cette formule</a>
+          </article>
+
+          <!-- Formule Premium -->
+          <article class="pricing-card reveal">
+            <h3 class="pricing-card__name">Premium</h3>
+            <p class="pricing-card__price">790&nbsp;€</p>
+            <ul class="pricing-card__features">
+              <li>Demi-journée de shooting en studio</li>
+              <li>30 photos</li>
+              <li>Direction artistique</li>
+              <li>Mise en scène sur-mesure (sable, eau, décors)</li>
+              <li>Tous droits commerciaux</li>
+            </ul>
+            <a href="#contact" class="btn btn--ghost btn--block">Choisir cette formule</a>
+          </article>
+        </div>
+
+        <p class="pricing__note reveal">
+          Tarifs HT – Devis personnalisé pour les projets spécifiques.
+          Déplacement possible dans l'Oise et les Hauts-de-France.
+        </p>
+      </section>
+
+      <!-- ====================== AVIS CLIENTS ====================== -->
+      <section class="section reviews" id="avis">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Avis clients</p>
+          <h2 class="section__title">Ce que mes clients en disent</h2>
+        </div>
+
+        <!-- Bandeau de synthèse -->
+        <div class="reviews__summary reveal">
+          <div class="reviews__score">
+            <span class="reviews__score-number">4,8</span>
+            <span class="reviews__score-out">/ 5</span>
+          </div>
+          <div class="reviews__score-stars">
+            <span class="stars stars--lg" aria-hidden="true">★★★★★</span>
+            <span class="reviews__score-text">basé sur 20 avis</span>
+          </div>
+        </div>
+
+        <!-- Grille de 20 avis -->
+        <div class="reviews__grid" id="reviews-grid">
+          <!-- Les avis sont injectés par script.js pour éviter la duplication -->
+        </div>
+      </section>
+
+      <!-- ====================== CONTACT ====================== -->
+      <section class="section contact" id="contact">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Parlons de votre projet</h2>
+          <p class="section__lead">
+            Une question, un devis, un projet ? N'hésitez pas à me contacter.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Coordonnées + carte -->
+          <div class="contact__info reveal">
+            <h3 class="contact__block-title">Photostore</h3>
+            <address class="contact__address">
+              <p class="contact__line">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                12 rue Solférino, 60200 Compiègne
+              </p>
+              <p class="contact__line">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+33440000000">03 44 00 00 00</a>
+              </p>
+              <p class="contact__line">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:contact@photostore.fr">contact@photostore.fr</a>
+              </p>
+              <p class="contact__line">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Lun–Ven 9h–18h, week-end sur rendez-vous
+              </p>
+            </address>
+
+            <!-- Réseaux sociaux -->
+            <div class="contact__social">
+              <a href="#" class="social-icon" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-icon" aria-label="Behance">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 6h7a3 3 0 0 1 0 6H2zM2 12h8a3 3 0 0 1 0 6H2zM15 8h6M18 12a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg>
+              </a>
+            </div>
+
+            <!-- Carte OpenStreetMap centrée sur Compiègne -->
+            <div class="contact__map">
+              <iframe
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.8111%2C49.4098%2C2.8411%2C49.4258&layer=mapnik&marker=49.4178%2C2.8261"
+                title="Carte OpenStreetMap centrée sur Compiègne, 12 rue Solférino"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Formulaire de contact -->
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom et prénom" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="vous@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78" />
+            </div>
+            <div class="form-group">
+              <label for="project-type">Type de projet</label>
+              <select id="project-type" name="project-type" required>
+                <option value="">Sélectionnez…</option>
+                <option value="packshot">Packshot fond blanc</option>
+                <option value="mise-en-scene">Mise en scène / publicité</option>
+                <option value="culinaire">Photo culinaire & boissons</option>
+                <option value="retouche">Retouche & détourage</option>
+                <option value="autre">Autre / projet sur-mesure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet, le nombre de produits, vos délais…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Envoyer ma demande</button>
+            <p class="form-success" id="form-success" hidden>
+              Merci ! Votre demande a bien été envoyée. Je vous réponds sous 24&nbsp;h.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#accueil" class="logo logo--light">
+            <svg class="logo__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <span class="logo__text">Photostore</span>
+          </a>
+          <p class="footer__tagline">Photographe commercial & publicitaire<br />à Compiègne, Oise</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Navigation pied de page">
+          <a href="#accueil">Accueil</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#avis">Avis</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer__legal">
+          <a href="#">Mentions légales</a>
+          <p class="footer__copyright">© 2026 Photostore — Tous droits réservés</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====================== LIGHTBOX ====================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualisation de l'image" hidden>
+      <button class="lightbox__close" id="lightbox-close" aria-label="Fermer l'image">&times;</button>
+      <button class="lightbox__prev" id="lightbox-prev" aria-label="Image précédnelle">&#10094;</button>
+      <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+      <button class="lightbox__next" id="lightbox-next" aria-label="Image suivante">&#10095;</button>
+      <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
